@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
@@ -99,11 +99,23 @@ let components = {
   Table,
 }
 
-export function CustomMDX(props) {
+export function CustomMDX({ source, ...props }) {
   return (
-    <MDXRemote
+    <ReactMarkdown
       {...props}
-      components={{ ...components, ...(props.components || {}) }}
-    />
+      components={{
+        a: CustomLink,
+        img: RoundedImage,
+        code: ({ children }) => <Code>{children}</Code>,
+        h1: createHeading(1),
+        h2: createHeading(2),
+        h3: createHeading(3),
+        h4: createHeading(4),
+        h5: createHeading(5),
+        h6: createHeading(6),
+      }}
+    >
+      {source}
+    </ReactMarkdown>
   )
 }
