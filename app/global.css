@@ -1,5 +1,25 @@
 @import 'tailwindcss';
 
+/* Font Variables */
+:root {
+  --font-inter: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+/* Font Classes */
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -147,4 +167,27 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+/* Custom Portfolio Styles */
+.backdrop-blur {
+  backdrop-filter: blur(16px);
+}
+
+/* Custom shadows for portfolio elements */
+.shadow-portfolio {
+  box-shadow: 0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12);
+}
+
+/* Ensure proper form styling */
+input, textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
