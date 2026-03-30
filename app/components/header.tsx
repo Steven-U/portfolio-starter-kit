@@ -21,7 +21,7 @@ export default function Header() {
         </nav>
         
         <div className="flex gap-3 items-center">
-          <a href="#contact" className="hidden md:inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+          <a href="https://cal.com/steven-ung-7epnj7/30min" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
             Book a tech session
           </a>
           <button 
@@ -53,7 +53,7 @@ export default function Header() {
             <a href="#work" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Work</a>
             <a href="#techstack" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Tech Stack</a>
             <a href="#contact" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <a href="#contact" className="inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 mt-2">
+            <a href="https://cal.com/steven-ung-7epnj7/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 mt-2">
               Book a tech session
             </a>
           </div>
