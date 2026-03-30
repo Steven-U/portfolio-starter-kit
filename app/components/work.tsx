@@ -45,8 +45,8 @@ export default function Work() {
     {
       title: 'Flaex Tools',
       url: 'https://tools.flaex.ai',
-      description: 'Directory of AI tools and resources',
-      category: 'Directory',
+      description: 'Curated ecosystem to discover SaaS and AI products, launch projects, and build authority.',
+      category: 'Ecosystem',
       gradient: 'from-neutral-500 to-neutral-700',
       featured: true
     }
@@ -101,7 +101,7 @@ export default function Work() {
           <div className="w-full mt-10">
             <p className="text-sm font-medium text-neutral-900 tracking-tight">Across industries and tech stacks</p>
             <p className="text-sm text-neutral-600 mt-1 max-w-sm">
-              From retail and creator economy to defense and smart tech—tailored solutions for diverse challenges.
+              From retail and creator economy to defense and smart tech, providing tailored solutions for diverse challenges.
             </p>
             <a href="#contact" className="inline-flex items-center justify-center gap-2 hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 max-w-sm rounded-full mt-4 pr-4 pl-4">
               Request full case studies

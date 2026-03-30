@@ -25,23 +25,41 @@ export default function About() {
               <div className="absolute left-0 top-6 h-24 w-px bg-gradient-to-b from-neutral-600 to-neutral-800 rounded-full"></div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2025–Present</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Scaling AI-driven solutions globally</p>
+              </div>
+              <div className="relative mb-10">
+                <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2022–2024</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Developing creator economy platforms</p>
+              </div>
+              <div className="relative mb-10">
+                <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2019–2025</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Entrepreneurship in smart home & e-commerce</p>
+              </div>
+              <div className="relative mb-10">
+                <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2019–2020</p>
                 <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Head Assistant & Data Analyst, Ministry of Armed Forces</p>
               </div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2019–2025</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Entrepreneur in smart home & e-commerce</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2016–2018</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Data Manager, Roche</p>
+                <p className="text-neutral-400 text-xs mt-1">Data quality & Web app development (Shiny R) for Healthcare Compliance.</p>
               </div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2022–2024</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Developed creator economy platforms</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2014–2016</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Data Analyst & PMO, EDF</p>
+                <p className="text-neutral-400 text-xs mt-1">Machine Learning (H2O) POCs and functional specifications for IS projects.</p>
               </div>
               <div className="relative">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2025</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Scaling AI-driven solutions globally</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2013–2014</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Data Mining & Analytics, HSBC & 1000mercis</p>
+                <p className="text-neutral-400 text-xs mt-1">Customer targeting, segmentation, and dashboard automation.</p>
               </div>
             </div>
           </div>

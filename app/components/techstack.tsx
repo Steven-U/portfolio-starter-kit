@@ -6,11 +6,11 @@ export default function TechStack() {
     },
     {
       category: "Backend & Database",
-      items: ["Node.js", "Supabase", "PostgreSQL", "Prisma", "Docker"]
+      items: ["Node.js", "Convex", "Supabase", "PostgreSQL", "Prisma", "Docker"]
     },
     {
       category: "AI & Machine Learning",
-      items: ["Claude API", "OpenAI", "Langchain", "Custom Models", "MLOps"]
+      items: ["Ax LLM", "DSPy", "Codex", "Gemini CLI", "Claude API", "OpenAI", "Langchain"]
     },
     {
       category: "DevOps & Tools",
