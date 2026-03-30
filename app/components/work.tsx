@@ -3,6 +3,22 @@
 export default function Work() {
   const projects = [
     {
+      title: 'IdeaSignal',
+      url: 'https://ideasignal.ai',
+      description: 'AI-powered market validation tool',
+      category: 'AI Tool',
+      gradient: 'from-emerald-600 to-teal-900',
+      featured: true
+    },
+    {
+      title: 'Virtutela',
+      url: 'https://emporium-storefront.vercel.app/',
+      description: 'E-commerce storefront MVP',
+      category: 'E-commerce',
+      gradient: 'from-blue-600 to-indigo-900',
+      featured: true
+    },
+    {
       title: 'Creava AI',
       url: 'https://www.creava.ai',
       description: 'AI-powered creative platform',

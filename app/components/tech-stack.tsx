@@ -167,10 +167,11 @@ export default function TechStack() {
             <div className="mt-6">
               <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-500 mb-2">Recent Projects</p>
               <ul className="space-y-1 text-sm">
+                <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://ideasignal.ai', '_blank')}>IdeaSignal</li>
+                <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://emporium-storefront.vercel.app/', '_blank')}>Virtutela</li>
                 <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://www.creava.ai', '_blank')}>Creava AI</li>
                 <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://toolranks.com', '_blank')}>ToolRanks</li>
                 <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://vibepov.com', '_blank')}>VibePOV</li>
-                <li className="px-3 py-2 rounded-lg text-neutral-300 hover:bg-neutral-800 transition cursor-pointer" onClick={() => window.open('https://tools.flaex.ai', '_blank')}>Flaex Tools</li>
               </ul>
             </div>
           </aside>
@@ -307,6 +308,34 @@ export default function TechStack() {
                 <span className="inline-flex items-center text-[11px] text-black bg-blue-400 rounded-full px-2 py-0.5 ring-1 ring-blue-300">Live</span>
               </div>
               <div className="space-y-2">
+                <div className="p-3 rounded-xl ring-1 ring-emerald-700 bg-emerald-900/20 cursor-pointer hover:bg-emerald-900/30 transition" onClick={() => window.open('https://ideasignal.ai', '_blank')}>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <span className="relative w-4 h-4 rounded-md ring-1 ring-emerald-600 bg-emerald-500/20">
+                        <span className="absolute inset-0.5 rounded-[3px] bg-emerald-400"></span>
+                      </span>
+                      <p className="text-sm text-neutral-200">IdeaSignal</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-emerald-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="p-3 rounded-xl ring-1 ring-blue-700 bg-blue-900/20 cursor-pointer hover:bg-blue-900/30 transition" onClick={() => window.open('https://emporium-storefront.vercel.app/', '_blank')}>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <span className="relative w-4 h-4 rounded-md ring-1 ring-blue-600 bg-blue-500/20">
+                        <span className="absolute inset-0.5 rounded-[3px] bg-blue-400"></span>
+                      </span>
+                      <p className="text-sm text-neutral-200">Virtutela</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </div>
+                </div>
                 <div className="p-3 rounded-xl ring-1 ring-purple-700 bg-purple-900/20 cursor-pointer hover:bg-purple-900/30 transition" onClick={() => window.open('https://www.creava.ai', '_blank')}>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
