@@ -1,0 +1,52 @@
+app/components/about.tsx
+  s_e6d2aad9c1474a::t_8218c98cc4b8c1 29,34,38-39
+  s_e6d2aad9c1474a::t_f4ae7bbb4c9da3 18
+app/layout.tsx
+  s_e6d2aad9c1474a::t_a5bd5bcc62dfa9 16,19,21-22
+app/components/hero.tsx
+  s_e6d2aad9c1474a::t_a2218980d3d43a 50-56
+  s_e6d2aad9c1474a::t_707c2b203c2d27 5,8
+  s_e6d2aad9c1474a::t_8bc949248522b3 47-48
+  s_e6d2aad9c1474a::t_962181f4cdbcde 17,24,27-29,31,40
+  s_e6d2aad9c1474a::t_5fd9f6733964f6 49
+app/components/work.tsx
+  s_e6d2aad9c1474a::t_2294b46c643753 16-23,32-38
+  s_e6d2aad9c1474a::t_ae9e4a446167fb 3-12,14
+  s_e6d2aad9c1474a::t_c3cf272fa39e38 15,24-31
+  s_e6d2aad9c1474a::t_3ef9be8682e604 140,142-144
+  s_e6d2aad9c1474a::t_bf0f58ebdc6329 94
+  s_e6d2aad9c1474a::t_86498c060f1c59 130,132-133
+  s_e6d2aad9c1474a::t_a3da7d554a590d 164-174
+  s_e6d2aad9c1474a::t_b1d13a3866272b 113,122
+app/blog/posts/adaptyv-loop.mdx
+  s_e6d2aad9c1474a::t_96f31517b150df 1-46
+app/components/nav.tsx
+  s_e6d2aad9c1474a::t_4afbd0ce677f4e 10-11
+app/components/services.tsx
+  s_e6d2aad9c1474a::t_b90c1d05ffbde4 73,75,78
+app/components/contact.tsx
+  s_e6d2aad9c1474a::t_db8da5971186d9 39
+  s_e6d2aad9c1474a::t_509b5c776d495b 109
+  s_e6d2aad9c1474a::t_a94e79be7a1db1 95
+  s_e6d2aad9c1474a::t_0f68f2cb78031e 37-38
+  s_e6d2aad9c1474a::t_1e938a14a23e0c 50,55-56,61-62,67-68
+  s_e6d2aad9c1474a::t_4836cd1af8a359 21
+pnpm-lock.yaml
+  s_e6d2aad9c1474a::t_957f7a2531cee0 254,260,266,272,278,284,290,296,303,310,317,324,331,338,345,352,428,435,442,449,527,534,541,548,729,735,741,747,753,759,765,771,1688,1695,1702,1709,2805-2806
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d4c43abb22fbe8d40267e6fd511abcdfb377052f",
+  "prompts": {},
+  "sessions": {
+    "s_e6d2aad9c1474a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9f31b9ab-1508-4f93-a4ca-88740c638ae9",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
