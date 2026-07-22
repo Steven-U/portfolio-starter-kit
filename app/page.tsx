@@ -1,7 +1,6 @@
 import Header from './components/header'
 import Hero from './components/hero'
 import Work from './components/work'
-import TechStackComponent from './components/tech-stack'
 import TechStack from './components/techstack'
 import About from './components/about'
 import Contact from './components/contact'
@@ -17,7 +16,6 @@ export default function Page() {
       <About />
       <Work />
       <TechStack />
-      <TechStackComponent />
       <Services />
       <Contact />
     </>

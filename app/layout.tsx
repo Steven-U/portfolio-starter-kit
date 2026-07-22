@@ -13,13 +13,13 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Steven — AI Engineer Portfolio',
+    default: 'Steven Ung — AI Engineer',
     template: '%s | Steven Ung',
   },
-  description: "Steven's portfolio — AI-driven full-stack development, innovative tech platforms.",
+  description: "AI engineer building production agentic systems, evals and knowledge graphs, with a decade of data science across pharma, energy, banking and defense.",
   openGraph: {
-    title: 'Steven  — AI Engineer Portfolio',
-    description: "Steven 's portfolio — AI-driven full-stack development, innovative tech platforms.",
+    title: 'Steven Ung — AI Engineer',
+    description: "AI engineer building production agentic systems, evals and knowledge graphs, with a decade of data science across pharma, energy, banking and defense.",
     url: baseUrl,
     siteName: 'Steven Portfolio',
     locale: 'en_US',

@@ -1,7 +1,41 @@
 'use client'
 
+type Project = {
+  title: string
+  url?: string
+  description: string
+  category: string
+  gradient: string
+  featured: boolean
+  private?: boolean
+}
+
 export default function Work() {
-  const projects = [
+  const projects: Project[] = [
+    {
+      title: 'adaptyv-loop',
+      url: 'https://github.com/Steven-U/adaptyv-loop',
+      description: 'Budgeted design–test–learn loop over a lab API. 76 tests, contract-validated against the published OpenAPI spec.',
+      category: 'Open Source',
+      gradient: 'from-violet-600 to-purple-900',
+      featured: true
+    },
+    {
+      title: 'Sovereign',
+      description: 'AI-driven quant trading system, live in production. Rust + Zig core running an event-driven signal pipeline with real-time on-chain processing, hard risk limits, and an append-only ledger for replay and audit.',
+      category: 'Quant / Systems',
+      gradient: 'from-slate-700 to-neutral-950',
+      featured: true,
+      private: true
+    },
+    {
+      title: 'Creava',
+      url: 'https://www.creava.ai',
+      description: 'Agent pipeline on a temporal knowledge graph, with MiPRO/GEPA prompt optimization behind a regression-gated promotion step.',
+      category: 'Agentic AI',
+      gradient: 'from-neutral-700 to-neutral-900',
+      featured: true
+    },
     {
       title: 'IdeaSignal',
       url: 'https://ideasignal.ai',
@@ -16,14 +50,6 @@ export default function Work() {
       description: 'E-commerce storefront MVP',
       category: 'E-commerce',
       gradient: 'from-blue-600 to-indigo-900',
-      featured: true
-    },
-    {
-      title: 'Creava AI',
-      url: 'https://www.creava.ai',
-      description: 'AI-powered creative platform',
-      category: 'AI Platform',
-      gradient: 'from-neutral-600 to-neutral-800',
       featured: true
     },
     {
@@ -65,7 +91,7 @@ export default function Work() {
           <div className="">
             <span className="text-sm text-neutral-500">Selected work</span>
             <h2 className="text-[44px] sm:text-6xl lg:text-7xl leading-[0.9] text-neutral-900 mt-2 font-medium tracking-tighter font-playfair">
-              AI-powered platforms that drive innovation.
+              Things I built, and shipped.
             </h2>
             <div className="mt-8 relative">
               <div className="absolute inset-0 flex items-center">
@@ -84,7 +110,7 @@ export default function Work() {
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M7 12a5 5 0 1 0 10 0 5 5 0 0 0-10 0"></path>
                   </svg>
-                  <span className="text-sm">AI Integration</span>
+                  <span className="text-sm">Agentic AI</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" style={{strokeWidth: 1.5}} viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -93,7 +119,7 @@ export default function Work() {
                     <rect x="14" y="14" width="7" height="7" rx="1"></rect>
                     <rect x="3" y="14" width="7" height="7" rx="1"></rect>
                   </svg>
-                  <span className="text-sm">E-commerce</span>
+                  <span className="text-sm">Evals</span>
                 </div>
               </div>
             </div>
@@ -101,21 +127,21 @@ export default function Work() {
           <div className="w-full mt-10">
             <p className="text-sm font-medium text-neutral-900 tracking-tight">Across industries and tech stacks</p>
             <p className="text-sm text-neutral-600 mt-1 max-w-sm">
-              From retail and creator economy to defense and smart tech, providing tailored solutions for diverse challenges.
+              A decade spanning healthcare, energy, banking and defense, now building agentic AI systems solo at startup velocity.
             </p>
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 max-w-sm rounded-full mt-4 pr-4 pl-4">
-              Request full case studies
+            <a href="https://github.com/Steven-U" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 max-w-sm rounded-full mt-4 pr-4 pl-4">
+              See more on GitHub
               <span className="inline-flex h-2 w-2 rounded-full bg-white"></span>
             </a>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <article 
+            <article
               key={project.title}
-              className={`relative overflow-hidden aspect-[3/2] bg-gradient-to-br ${project.gradient} border-neutral-200 border rounded-3xl cursor-pointer transition-transform hover:scale-105 p-8`} 
-              onClick={() => window.open(project.url, '_blank')} 
-              role="button"
+              className={`relative overflow-hidden aspect-[3/2] bg-gradient-to-br ${project.gradient} border-neutral-200 border rounded-3xl transition-transform p-8 ${project.private ? '' : 'cursor-pointer hover:scale-105'}`}
+              onClick={project.private ? undefined : () => window.open(project.url, '_blank')}
+              role={project.private ? undefined : 'button'}
             >
               {project.featured && (
                 <div className="absolute top-3 left-3">
@@ -135,11 +161,17 @@ export default function Work() {
                 <p className="text-white text-lg font-medium tracking-tight leading-tight">{project.title}</p>
                 <p className="text-white/80 text-sm mt-1">{project.description}</p>
                 <div className="flex items-center gap-1 mt-2">
-                  <span className="text-white/60 text-xs">Visit site</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M7 7h10v10"></path>
-                    <path d="M7 17 17 7"></path>
-                  </svg>
+                  {project.private ? (
+                    <span className="text-white/60 text-xs">Private system</span>
+                  ) : (
+                    <>
+                      <span className="text-white/60 text-xs">Visit site</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path>
+                      </svg>
+                    </>
+                  )}
                 </div>
               </div>
             </article>

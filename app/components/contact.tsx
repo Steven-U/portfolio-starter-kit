@@ -18,7 +18,7 @@ export default function Contact() {
               <h3 className="text-2xl sm:text-3xl text-neutral-900 font-medium tracking-tighter font-playfair">Steven Ung</h3>
             </div>
             <p className="text-lg sm:text-xl text-neutral-700 leading-relaxed max-w-2xl">
-              Let&apos;s build your next tech solution. Contact me.
+              Open to AI engineer and founding engineer roles, remote or relocation. Also available for select project work. Let&apos;s talk.
             </p>
           </div>
           <div className="">
@@ -34,6 +34,9 @@ export default function Contact() {
             <h4 className="text-neutral-900 font-medium mb-4">Connect</h4>
             <ul className="space-y-2 text-sm text-neutral-600">
               <li><a href="mailto:su.stevenung@gmail.com" className="hover:text-blue-600 transition">Email</a></li>
+              <li><a href="https://linkedin.com/in/steven-u" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition">LinkedIn</a></li>
+              <li><a href="https://github.com/Steven-U" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition">GitHub</a></li>
+              <li><a href="/steven-ung-cv.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition">Download CV</a></li>
             </ul>
           </div>
         </div>
@@ -44,25 +47,25 @@ export default function Contact() {
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-600 animate-pulse"></span>
                 Available now
               </div>
-              <h4 className="text-xl sm:text-2xl text-neutral-900 font-medium tracking-tighter font-playfair">Ready to innovate?</h4>
+              <h4 className="text-xl sm:text-2xl text-neutral-900 font-medium tracking-tighter font-playfair">What I bring</h4>
               <ul className="text-sm text-neutral-700 space-y-3">
                 <li className="flex items-start gap-2">
                   <svg className="w-4 h-4 text-blue-600 mt-0.5" style={{strokeWidth:1.5}} viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path d="M20 6 9 17l-5-5"></path>
-                  </svg> 
-                  AI-optimized development
+                  </svg>
+                  Production agentic systems, end to end
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-4 h-4 text-blue-600 mt-0.5" style={{strokeWidth:1.5}} viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path d="M20 6 9 17l-5-5"></path>
-                  </svg> 
-                  Full-stack expertise
+                  </svg>
+                  Evals and observability that catch regressions
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-4 h-4 text-blue-600 mt-0.5" style={{strokeWidth:1.5}} viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path d="M20 6 9 17l-5-5"></path>
-                  </svg> 
-                  Rapid delivery
+                  </svg>
+                  A decade of data science across four sectors
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 pt-2 text-sm">
@@ -89,7 +92,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-neutral-700">Message</label>
-                  <textarea id="message" name="message" rows={4} className="mt-1 block w-full rounded-md border-neutral-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 text-sm" placeholder="Describe your project or needs..." required></textarea>
+                  <textarea id="message" name="message" rows={4} className="mt-1 block w-full rounded-md border-neutral-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 text-sm" placeholder="Tell me about the role or the project..." required></textarea>
                 </div>
                 <a href="mailto:su.stevenung@gmail.com?subject=Tech%20Collaboration%20Inquiry&body=Hi%20Steven,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0D%0A%0D%0ABest%20regards" className="inline-flex items-center justify-center gap-2 hover:bg-neutral-800 transition text-sm font-medium text-white bg-black w-full rounded-md pt-2.5 pr-4 pb-2.5 pl-4">
                   Send Message
@@ -103,7 +106,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-neutral-500">
-          © 2025 Steven Ung. All rights reserved. Built with <a href="https://nextjs.org" target="_blank" className="text-blue-600 hover:underline">Next.js</a> and <a href="https://tailwindcss.com" target="_blank" className="text-blue-600 hover:underline">Tailwind CSS</a>.
+          © 2026 Steven Ung. All rights reserved. Built with <a href="https://nextjs.org" target="_blank" className="text-blue-600 hover:underline">Next.js</a> and <a href="https://tailwindcss.com" target="_blank" className="text-blue-600 hover:underline">Tailwind CSS</a>.
         </div>
       </div>
     </footer>

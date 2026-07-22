@@ -1,0 +1,46 @@
+---
+title: 'What I found when I analyzed 400 protein designs'
+publishedAt: '2026-07-22'
+summary: 'I built a budgeted design-test-learn loop over a public protein competition dataset. The standard filter turned out to be weak, one signal everyone throws away turned out to be strong, and a model that looked great in cross-validation lost out of sample. Here is the work, including the parts that failed.'
+---
+
+Protein design teams generate designs far faster than they can test them. At around $99 a protein, a 400-design campaign runs about $40k, and in the public EGFR competition data I worked with, roughly 86% of that money bought non-binders. So I asked a narrow question: given a fixed budget, which designs should you actually buy?
+
+I built a small package to answer it. The result matters less than how it fell out, so this is the honest version, failures included.
+
+## The filter everyone uses is weak
+
+The first thing I measured was whether the standard per-design metrics separate binders from non-binders. AUC, where 0.5 is a coin flip:
+
+- pLDDT: 0.656
+- ipTM: 0.636
+- ESM-2 pseudo-log-likelihood: 0.547
+- pae_interaction: 0.388
+
+Nothing there is a strong filter. And the last one is worse than weak: at 0.388 it points the wrong way against the usual "lower iPAE is better" convention on this data. A campaign that gates on these is mostly buying noise.
+
+## The signal people throw away
+
+What did separate outcomes was the design method. Hit rate by declared method ran from 43% for ProteinMPNN/LigandMPNN down to near zero for others, a 9x spread. The method is known before a single dollar is spent, and yet the most popular choice in the competition, at 83 designs, returned only 7.2%. So the allocation should be driven by method, with the per-design score only ordering candidates once the budget is split.
+
+## The part that failed
+
+I then tried to beat ipTM with a gradient-boosted model on the per-design metrics. Under five-fold cross-validation it looked strong: 25 binders found per 80 tests against ipTM's 19. A clear win.
+
+Then I ran the honest setup: train on the earlier campaign, select in the later one, which is the situation you actually face. It dropped to 16, below plain ipTM. The cross-validated number was a mirage. Had I stopped at it, I would have shipped something that quietly degrades real campaigns.
+
+So no learned per-design model ships. That is the whole point of measuring the out-of-sample case before believing your own result.
+
+## Two more things the data corrected
+
+My first selection policy diversified across methods, capping any one method at 40% of budget. It performed worse than random at small budgets. The data argues against diversifying: binders concentrate heavily in one method, and the cap was spending money moving away from it. I turned the cap from a diversification mandate into a safety rail against small-sample flukes.
+
+And the baseline itself was lying at first. ipTM is quantized to two decimals, so 78 distinct values cover 378 designs and every budget cut lands inside a large tie group. Ordering those ties by spreadsheet row instead of at random swung the ipTM baseline between 9 and 17 binders on luck alone. Every comparison now randomizes ties for every strategy, baselines included.
+
+## What shipped
+
+With one campaign of history, allocating by method finds 13 to 40% more binders per dollar than ipTM ranking, steady around 20% for method history alone. Worth roughly $100 to $150 per binder found. The value is in keeping the history across campaigns, which is the argument for wiring the loop together rather than exporting a spreadsheet each time.
+
+The package validates its API client against the vendor's published OpenAPI spec through a proxy, which caught three real bugs in my own code that unit tests never would have, all wrong assumptions about response shapes. It also puts three controls in front of a billable endpoint that can create an invoice with no human step: spend ceilings checked against the vendor's own cost estimate, a dry-run gate fingerprinted to the exact request, and an append-only log flushed to disk before the billable call.
+
+The standing rule this produced, and the reason I wrote it down: never report a cross-validated number without the out-of-sample one next to it.

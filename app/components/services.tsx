@@ -70,12 +70,12 @@ export default function Services() {
     <section id="services" className="sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-neutral-200 mt-12 pt-16 px-4 mb-20">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="max-w-2xl">
-          <p className="text-sm text-neutral-500 font-medium uppercase tracking-widest mb-2">Services & Partnerships</p>
+          <p className="text-sm text-neutral-500 font-medium uppercase tracking-widest mb-2">Also available for project work</p>
           <h3 className="text-4xl sm:text-5xl text-neutral-900 font-medium tracking-tighter font-playfair">
-            Scale your ideas with precision and speed.
+            Short engagements, when a full-time fit isn&apos;t the right one.
           </h3>
           <p className="text-lg text-neutral-600 mt-4">
-            Focused on high-velocity development and robust AI architecture.
+            Alongside full-time roles, I take on a small number of focused builds and technical reviews.
           </p>
         </div>
         <a 

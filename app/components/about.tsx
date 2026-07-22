@@ -15,7 +15,7 @@ export default function About() {
             About
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium leading-[1.05] tracking-tight" style={{fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, sans-serif'}}>
-            My journey building innovative tech solutions.
+            From data science to agentic AI.
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
@@ -26,17 +26,17 @@ export default function About() {
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2025–Present</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Scaling AI-driven solutions globally</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Building agentic AI systems (Creava, Flaex)</p>
               </div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
                 <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2022–2024</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Developing creator economy platforms</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Founding CTO and independent product building</p>
               </div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
-                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2019–2025</p>
-                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Entrepreneurship in smart home & e-commerce</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400">2019–Present</p>
+                <p className="mt-1 text-white text-base sm:text-lg font-medium tracking-tight">Independent ventures across AI, web, and quant trading</p>
               </div>
               <div className="relative mb-10">
                 <span className="absolute -left-3 top-3 h-px w-3 bg-neutral-700"></span>
