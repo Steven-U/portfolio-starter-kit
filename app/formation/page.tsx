@@ -35,15 +35,65 @@ export default function FormationPage() {
           <h2 className="text-2xl font-bold mb-6 text-neutral-900 dark:text-white">Why This Is Different</h2>
           <div className="flex flex-col gap-5 text-lg text-neutral-700 dark:text-neutral-300">
             <p>
-              I don't do hourly tutoring. You're here to build a real product and own it, not generic advices from Linkedin or Instagram.
+              I don't do hourly tutoring. You're here to build a real product and own it, not copy generic advice from LinkedIn.
             </p>
             <p>
-              Most AI coding tutorials are garbage. They teach you to write massive, bloated prompts that actively make Claude 5 perform worse. 
-              I'll show you what actually works in production: a barebones setup, giving business context instead of micromanaging code, and treating the model like a senior engineer rather than a dumb intern.
+              Most AI coding tutorials are dangerous. They teach "vibe coding"—writing code without explaining <strong>API key protection, database security rules, or secure authentication</strong>. This results in brittle apps that leak keys, get hacked, and break under any real load.
             </p>
-            <p className="font-semibold text-black dark:text-white mt-2">
-              You walk away with a shipped MVP and the hard skills to maintain it without me.
+            <p>
+              I will show you what actually works in production: a secure environment setup, using proper system boundaries, and managing the AI like a senior engineer rather than a junior developer.
             </p>
+          </div>
+
+          {/* Vibe Coder vs Elevated Builder */}
+          <div className="mt-10 border-t border-neutral-200 dark:border-neutral-800 pt-8">
+            <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-6">Standard Vibe Coding vs. Production Engineering</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div className="bg-neutral-50 dark:bg-neutral-950 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                <h4 className="font-bold text-red-600 dark:text-red-400 mb-3">Standard "Vibe Coder"</h4>
+                <ul className="space-y-2 text-neutral-600 dark:text-neutral-400">
+                  <li>• Hardcodes secret API keys directly into public repositories</li>
+                  <li>• Ignores basic security, auth, and database rules</li>
+                  <li>• Builds brittle, bug-ridden prototypes that break on deploy</li>
+                  <li>• Gets stuck in infinite debugging loops when the AI hallucinates</li>
+                </ul>
+              </div>
+              <div className="bg-neutral-50 dark:bg-neutral-950 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                <h4 className="font-bold text-neutral-900 dark:text-white mb-3">Elevated Graduate</h4>
+                <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
+                  <li>• Employs environment variables, secure routes, and strict access controls</li>
+                  <li>• Designs maintainable, secure, and production-ready MVPs</li>
+                  <li>• Employs clean architecture, context files, and proper validation</li>
+                  <li>• Debugs system failures systematically without looping the model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Career Path */}
+          <div className="mt-10 border-t border-neutral-200 dark:border-neutral-800 pt-8">
+            <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4">Your Next Career Move</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 text-base mb-6 leading-relaxed">
+              When a non-coder learns proper software architecture, security, and SWE best practices, they don't land traditional software engineer jobs—they enter a new tier of AI-native builders:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 className="font-bold text-neutral-900 dark:text-white mb-1">AI-First Product Specialist / TPO</h4>
+                <p className="text-neutral-600 dark:text-neutral-400">Instead of just writing specs for external developers, you build and ship secure functional prototypes yourself.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-neutral-900 dark:text-white mb-1">Solopreneur / Founder</h4>
+                <p className="text-neutral-600 dark:text-neutral-400">Launch and monetize your own SaaS or business tools without taking on heavy early technical debt.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-neutral-900 dark:text-white mb-1">AI Solutions Architect</h4>
+                <p className="text-neutral-600 dark:text-neutral-400">Build custom internal tools and automate workflows for companies looking to modernize operations.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-neutral-900 dark:text-white mb-1">AI Operations Lead</h4>
+                <p className="text-neutral-600 dark:text-neutral-400">Take charge of replacing manual business processes with robust, self-hosted AI automations.</p>
+              </div>
+            </div>
           </div>
         </section>
 
