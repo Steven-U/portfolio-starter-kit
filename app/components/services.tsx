@@ -79,7 +79,7 @@ export default function Services() {
           </p>
         </div>
         <a 
-          href="https://cal.com/steven-ung-7epnj7/30min" 
+          href="https://cal.com/steven-u/meeting" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="inline-flex items-center justify-center gap-2 hover:bg-neutral-800 transition text-sm font-medium text-white bg-black h-12 rounded-full px-8 shadow-lg shadow-neutral-200"
@@ -135,7 +135,7 @@ export default function Services() {
             </ul>
 
             <a 
-              href="https://cal.com/steven-ung-7epnj7/30min" 
+              href="https://cal.com/steven-u/meeting" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={`inline-flex items-center justify-center h-12 rounded-2xl text-sm font-bold transition-all ${

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,19 +10,20 @@ export default function Header() {
     <header className="sm:px-6 md:px-10 w-full max-w-7xl mt-10 mr-auto ml-auto pr-4 pl-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="cursor-pointer text-lg font-semibold tracking-tight font-playfair" onClick={() => window.location.href='/'} role="button">S.UNG</span>
+          <Link href="/" className="cursor-pointer text-lg font-semibold tracking-tight font-playfair" role="button">S.UNG</Link>
         </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 text-sm text-neutral-700 items-center">
-          <a href="#about" className="hover:text-black transition-colors font-medium">About</a>
-          <a href="#work" className="hover:text-black transition-colors font-medium">Work</a>
-          <a href="#techstack" className="hover:text-black transition-colors font-medium">Tech Stack</a>
-          <a href="#contact" className="hover:text-black transition-colors font-medium">Contact</a>
+          <Link href="/#about" className="hover:text-black transition-colors font-medium">About</Link>
+          <Link href="/#work" className="hover:text-black transition-colors font-medium">Work</Link>
+          <Link href="/#techstack" className="hover:text-black transition-colors font-medium">Tech Stack</Link>
+          <Link href="/formation" className="hover:text-black transition-colors font-medium">Formation</Link>
+          <Link href="/#contact" className="hover:text-black transition-colors font-medium">Contact</Link>
         </nav>
         
         <div className="flex gap-3 items-center">
-          <a href="https://cal.com/steven-ung-7epnj7/30min" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+          <a href="https://cal.com/steven-u/meeting" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
             Book a tech session
           </a>
           <button 
@@ -49,11 +51,12 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="md:hidden mt-4 pb-4 border-t border-neutral-200">
           <div className="flex flex-col gap-4 pt-4">
-            <a href="#about" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="#work" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Work</a>
-            <a href="#techstack" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Tech Stack</a>
-            <a href="#contact" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <a href="https://cal.com/steven-ung-7epnj7/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 mt-2">
+            <Link href="/#about" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>About</Link>
+            <Link href="/#work" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Work</Link>
+            <Link href="/#techstack" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Tech Stack</Link>
+            <Link href="/formation" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Formation</Link>
+            <Link href="/#contact" className="hover:text-black transition-colors font-medium text-neutral-700" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            <a href="https://cal.com/steven-u/meeting" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center hover:bg-neutral-800 transition text-sm text-white bg-neutral-900 h-10 rounded-full pr-5 pl-5 mt-2">
               Book a tech session
             </a>
           </div>

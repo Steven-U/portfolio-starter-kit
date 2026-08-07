@@ -22,7 +22,7 @@ export default function Work() {
     },
     {
       title: 'Sovereign',
-      description: 'AI-driven quant trading system, live in production. Rust + Zig core running an event-driven signal pipeline with real-time on-chain processing, hard risk limits, and an append-only ledger for replay and audit.',
+      description: 'AI-driven quant trading system, live in production. Rust core running an event-driven signal pipeline with real-time on-chain processing, hard risk limits, and an append-only ledger for replay and audit.',
       category: 'Quant / Systems',
       gradient: 'from-slate-700 to-neutral-950',
       featured: true,
@@ -46,11 +46,11 @@ export default function Work() {
     },
     {
       title: 'Virtutela',
-      url: 'https://emporium-storefront.vercel.app/',
-      description: 'E-commerce storefront MVP',
-      category: 'E-commerce',
+      description: 'Client e-commerce storefront MVP (Currently postponed)',
+      category: 'Client Work',
       gradient: 'from-blue-600 to-indigo-900',
-      featured: true
+      featured: true,
+      private: true
     },
     {
       title: 'ToolRanks',
@@ -139,40 +139,49 @@ export default function Work() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className={`relative overflow-hidden aspect-[3/2] bg-gradient-to-br ${project.gradient} border-neutral-200 border rounded-3xl transition-transform p-8 ${project.private ? '' : 'cursor-pointer hover:scale-105'}`}
+              className={`group flex flex-col justify-between relative overflow-hidden bg-white border border-neutral-200 rounded-[2rem] p-8 transition-all duration-300 ${project.private ? '' : 'cursor-pointer hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:border-neutral-300 hover:-translate-y-1'}`}
               onClick={project.private ? undefined : () => window.open(project.url, '_blank')}
               role={project.private ? undefined : 'button'}
             >
-              {project.featured && (
-                <div className="absolute top-3 left-3">
-                  <span className="inline-flex items-center gap-2 text-xs text-white/90 bg-black/30 border border-white/20 rounded-full px-1.5 py-1.5 backdrop-blur">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" style={{strokeWidth: 1.5}} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="m6 13 3 3 8-8"></path>
-                    </svg>
-                  </span>
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-8">
+                  {/* Project Monogram/Icon */}
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-neutral-900 text-white shadow-sm transform group-hover:scale-105 transition-transform duration-300 shrink-0 border border-black">
+                    <span className="font-bold text-xl font-playfair">{project.title.charAt(0)}</span>
+                  </div>
+                  
+                  {/* Badges Container */}
+                  <div className="flex flex-wrap justify-end gap-2 pl-4">
+                    {project.featured && (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-neutral-900 bg-neutral-100 px-2.5 py-1 rounded-md border border-neutral-200 uppercase tracking-wider">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        Featured
+                      </span>
+                    )}
+                    <span className="inline-flex items-center text-[11px] font-bold text-neutral-600 bg-neutral-50 px-2.5 py-1 rounded-md border border-neutral-200 uppercase tracking-wider">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
-              )}
-              <div className="absolute top-3 right-3">
-                <span className="inline-flex items-center text-xs text-white/90 bg-black/30 border border-white/20 rounded-full px-3 py-1.5 backdrop-blur">
-                  {project.category}
-                </span>
+
+                <h3 className="text-2xl font-bold text-neutral-900 tracking-tight mb-3 group-hover:text-black transition-colors">{project.title}</h3>
+                <p className="text-neutral-600 text-sm leading-relaxed mb-8">
+                  {project.description}
+                </p>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
-                <p className="text-white text-lg font-medium tracking-tight leading-tight">{project.title}</p>
-                <p className="text-white/80 text-sm mt-1">{project.description}</p>
-                <div className="flex items-center gap-1 mt-2">
-                  {project.private ? (
-                    <span className="text-white/60 text-xs">Private system</span>
-                  ) : (
-                    <>
-                      <span className="text-white/60 text-xs">Visit site</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M7 7h10v10"></path>
-                        <path d="M7 17 17 7"></path>
-                      </svg>
-                    </>
-                  )}
-                </div>
+
+              <div className="relative z-10 mt-auto pt-6 border-t border-neutral-100 flex items-center justify-between">
+                {project.private ? (
+                  <span className="flex items-center gap-2 text-sm text-neutral-400 font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    Private System
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-2 text-sm text-neutral-900 font-semibold group-hover:gap-3 transition-all duration-300">
+                    View Project 
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                )}
               </div>
             </article>
           ))}

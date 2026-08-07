@@ -10,7 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/portfolio-starter-kit',
   trailingSlash: true,
 }
 
