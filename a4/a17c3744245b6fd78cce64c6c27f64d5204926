@@ -1,0 +1,16 @@
+app/sitemap.ts
+  h_28a18529cf55a2 4
+next.config.js
+  h_28a18529cf55a2 2-3,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a4a17c3744245b6fd78cce64c6c27f64d5204926",
+  "prompts": {},
+  "humans": {
+    "h_28a18529cf55a2": {
+      "author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
