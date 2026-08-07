@@ -1,0 +1,22 @@
+app/components/header.tsx
+  h_28a18529cf55a2 4,13,18-22,26,54-59
+app/components/services.tsx
+  h_28a18529cf55a2 82,138
+app/components/work.tsx
+  h_28a18529cf55a2 25,49-50,52-53,142,146-164,166-170,172-184
+app/formation/page.tsx
+  h_28a18529cf55a2 1-109
+app/formation/pricing-section.tsx
+  h_28a18529cf55a2 1-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "23f50ddf4387c5b6a2d991d3afa6cc22f17a3be5",
+  "prompts": {},
+  "humans": {
+    "h_28a18529cf55a2": {
+      "author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
