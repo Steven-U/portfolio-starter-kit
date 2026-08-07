@@ -1,0 +1,14 @@
+app/formation/page.tsx
+  h_28a18529cf55a2 35,41,44,48,50,53,62,64-67,75,77,81-82,85-86,89-90,93-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6c5580c9cc96ea78ee428254cdf2fd85648598c5",
+  "prompts": {},
+  "humans": {
+    "h_28a18529cf55a2": {
+      "author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
