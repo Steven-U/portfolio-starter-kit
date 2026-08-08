@@ -16,13 +16,25 @@ export default function FormationPage() {
       
       <main className="max-w-4xl mx-auto px-6 md:px-10 py-16 md:py-24">
         {/* Hero Section */}
-        <section className="mb-24 text-center">
+        <section className="mb-20 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 mb-6 font-playfair">
             Stop Managing Developers.<br className="hidden md:block" /> Start Building Yourself.
           </h1>
-          <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed mb-8">
             A premium, outcome-based mentorship program designed exclusively for Project Managers and Corporate Professionals. Learn to leverage Claude 5 to go from idea to a working MVP in 4 weeks.
           </p>
+
+          {/* Pilot Founding Cohort Banner */}
+          <div className="max-w-xl mx-auto bg-neutral-900 text-white rounded-2xl p-5 border border-black text-sm text-left flex items-start gap-4 shadow-md">
+            <span className="text-2xl mt-0.5">💡</span>
+            <div>
+              <p className="font-bold text-white mb-1">Founding Cohort Pilot Offer</p>
+              <p className="text-neutral-400">
+                I am accepting the next 2 builders at a discounted pilot rate of <strong>€950</strong> for the "Zero to Autonomous" Sprint in exchange for a written testimonial and case study after we ship.
+              </p>
+            </div>
+          </div>
+
           <div className="mt-10">
             <a href="https://cal.com/steven-u/meeting" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
               Book a Strategy Call
@@ -151,6 +163,28 @@ export default function FormationPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Prerequisites */}
+        <section className="mb-24 bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-3xl p-8 md:p-12">
+          <h2 className="text-2xl font-bold mb-6 text-neutral-900 dark:text-white">Prerequisites & Requirements</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 text-lg mb-6 leading-relaxed">
+            You don't need any prior coding experience or math background to participate. However, you must have the following ready before we start:
+          </p>
+          <ul className="space-y-4 text-base text-neutral-700 dark:text-neutral-300">
+            <li className="flex items-start">
+              <span className="text-neutral-900 dark:text-white font-bold mr-3">1.</span>
+              A GitHub account (Free).
+            </li>
+            <li className="flex items-start">
+              <span className="text-neutral-900 dark:text-white font-bold mr-3">2.</span>
+              An active Claude Pro subscription (or Anthropic API billing setup). We will help you configure your API keys and local environment in Session 1.
+            </li>
+            <li className="flex items-start">
+              <span className="text-neutral-900 dark:text-white font-bold mr-3">3.</span>
+              A concrete project idea you are motivated to build (applicable to the Sprint tier).
+            </li>
+          </ul>
         </section>
 
       </main>

@@ -29,10 +29,10 @@ export default function PricingSection() {
           <p className={`${selectedPackage === 'sprint' ? 'text-neutral-400' : 'text-neutral-500'} mb-6 flex-grow transition-colors`}>A 4 to 6-week guided sprint where you build your specific project alongside me.</p>
           
           <div className="mb-6">
-            <span className="text-4xl font-bold">€1,500 - €2,500</span>
+            <span className="text-4xl font-bold">€1,950</span>
             <span className={`${selectedPackage === 'sprint' ? 'text-neutral-400' : 'text-neutral-500'} ml-2 transition-colors`}>/ project</span>
             <div className={`text-sm mt-2 font-medium ${selectedPackage === 'sprint' ? 'text-neutral-400' : 'text-neutral-500'} transition-colors`}>
-              (Available in 3 monthly installments)
+              (Available in 3 monthly installments of €650)
             </div>
           </div>
           
@@ -71,22 +71,29 @@ export default function PricingSection() {
           <p className={`${selectedPackage === 'masterclass' ? 'text-neutral-400' : 'text-neutral-500'} mb-6 flex-grow transition-colors`}>A focused deep dive into the methodology (Opus/Fable prompting, environment setup).</p>
           
           <div className="mb-8">
-            <span className="text-4xl font-bold">€600 - €900</span>
+            <span className="text-4xl font-bold">€650</span>
             <span className={`${selectedPackage === 'masterclass' ? 'text-neutral-400' : 'text-neutral-500'} ml-2 transition-colors`}>/ package</span>
+            <div className={`text-sm mt-2 font-medium ${selectedPackage === 'masterclass' ? 'text-neutral-400' : 'text-neutral-500'} transition-colors`}>
+              (Available in 3 monthly installments of €225)
+            </div>
           </div>
           
           <ul className={`space-y-4 mb-8 ${selectedPackage === 'masterclass' ? 'text-neutral-300' : 'text-neutral-600'} transition-colors`}>
             <li className="flex items-start">
               <svg className={`w-6 h-6 mr-3 shrink-0 ${selectedPackage === 'masterclass' ? 'text-white' : 'text-neutral-900'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-              3x 90-minute sessions over two weeks
+              3x 90-minute live deep-dive sessions over two weeks
             </li>
             <li className="flex items-start">
               <svg className={`w-6 h-6 mr-3 shrink-0 ${selectedPackage === 'masterclass' ? 'text-white' : 'text-neutral-900'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-              Avoiding legacy mistakes in AI coding
+              Deliverable: Local development environment with Claude Code configured
             </li>
             <li className="flex items-start">
               <svg className={`w-6 h-6 mr-3 shrink-0 ${selectedPackage === 'masterclass' ? 'text-white' : 'text-neutral-900'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-              Perfect for teams on a tighter budget
+              Custom MEMORY.md context architecture setup
+            </li>
+            <li className="flex items-start">
+              <svg className={`w-6 h-6 mr-3 shrink-0 ${selectedPackage === 'masterclass' ? 'text-white' : 'text-neutral-900'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              Workflow blueprint to debug model loops independently
             </li>
           </ul>
         </div>
