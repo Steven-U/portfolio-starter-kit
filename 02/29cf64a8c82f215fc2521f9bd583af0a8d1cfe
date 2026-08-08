@@ -1,0 +1,16 @@
+app/formation/page.tsx
+  h_28a18529cf55a2 19,23,26-37,168-189
+app/formation/pricing-section.tsx
+  h_28a18529cf55a2 32,35,74,76-78,84-88,92,96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0229cf64a8c82f215fc2521f9bd583af0a8d1cfe",
+  "prompts": {},
+  "humans": {
+    "h_28a18529cf55a2": {
+      "author": "Steven-U <steven.ung@outlook.fr>"
+    }
+  }
+}
